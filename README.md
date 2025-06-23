@@ -1,90 +1,73 @@
 # 🍽️ MARK – Chain of Restaurants
 
-💻 Full-Stack Food Ordering Web Application – Project Description  
-A production-ready full-stack food ordering system that supports end-to-end online food purchase workflows, including user-side interactions and admin-side management. The application enables users to browse menu items, manage a shopping cart, place orders using Stripe-based online payments, and receive real-time order status updates. On the admin side, it features a dedicated dashboard for menu item management, order tracking, and delivery status control. The system is designed to be scalable, responsive, and secure, simulating the core functionalities of a modern online food delivery platform.
+A full-stack food ordering web application built with **React.js**, **Node.js**, and **MongoDB**, featuring real-time order tracking, secure payments via Stripe and a powerful admin dashboard.
+Demo - https://drive.google.com/file/d/18MWUdek-F-zumwlzidRWYXoNLMllXwgI/view?usp=sharing
 
-🔧 Key Features  
-✅ User Authentication – Secure login/signup system using JWT  
-✅ Dynamic Menu Display – Users can browse and search available food items  
-✅ Cart System – Add, remove, and modify items in a persistent shopping cart  
-✅ Checkout & Payments – Seamless integration with Stripe API for real-time, secure online payments  
-✅ Order Placement – Orders are stored and tracked in a MongoDB database  
-✅ Real-Time Order Status – Admin can update status: Food Processing → Out for Delivery → Delivered, and it reflects instantly in the user’s "My Orders" page  
-✅ Admin Dashboard – Add/update/delete menu items, view all orders, update order statuses
+## Features
 
-🚀 Tech Stack  
-Frontend: React.js (Vite)  
-Backend: Node.js + Express.js  
-Database: MongoDB  
-Authentication: JWT  
-Payments: Stripe Checkout  
-Admin Panel: React (Vite)  
-Styling: CSS
+- **User Authentication** – Secure login/signup using JWT  
+- **Dynamic Menu** – Browse and search food items  
+- **Cart System** – Add, remove, and modify items in a persistent cart  
+- **Stripe Checkout** – Real-time, secure online payments  
+- **Order Status Tracking** – Real-time updates on orders: *Processing → Out for Delivery → Delivered*  
+- **Admin Dashboard** – Manage menu items, view all orders, and update statuses  
 
-🗂️ Folder Structure  
-mark/  
-├── frontend/       → Customer-facing React app  
-├── backend/        → Node.js/Express server + MongoDB  
-├── admin/          → Admin panel (React)  
-└── README.md       → Project guide
+## Tech Stack
 
-⚙️ Setup Instructions
+- **Frontend:** React.js  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Authentication:** JSON Web Tokens (JWT)  
+- **Payments:** Stripe API  
+- **Styling:** CSS  
 
-1. Clone the repository  
+## 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mark-restaurant-app.git  
-cd mark-restaurant-app
+git clone https://github.com/ManvithaReddyyy/Food-Ordering-Website.git
+cd Food-Ordering-Website
+```
 
-2. Install dependencies
 
-Frontend:
-
-bash
-Copy code
-cd frontend  
+## 2. Install Dependencies
+Frontend
+```bash
+cd frontend
 npm install
-Backend:
-
-bash
-Copy code
-cd ../backend  
+```
+Backend
+```bash
+cd backend
 npm install
-Admin Panel:
-
-bash
-Copy code
-cd ../admin  
+```
+Admin Panel
+```bash
+cd admin
 npm install
+```
 
-3. Create .env file in /backend
-Inside /backend, create a file named .env with the following content:
-
-env
-Copy code
-PORT=5000  
-MONGODB_URL=your_mongodb_connection_url  
-JWT_SECRET_KEY=your_jwt_secret_key  
+## 3. Configure Environment Variables
+Create a .env file inside the backend directory and add :
+```bash
+PORT=5000
+MONGODB_URL=your_mongodb_connection_string
+JWT_SECRET_KEY=your_jwt_secret_key
 STRIPE_SECRET_KEY=your_stripe_secret_key
+```
 
-4. Start the project
-
-Backend:
-
-bash
-Copy code
-cd backend  
+## 4. Run the Project
+Start Backend
+```bash
+cd backend
 npm run dev
-Frontend:
-
-bash
-Copy code
-cd frontend  
+```
+Start Frontend
+```bash
+cd frontend
 npm run dev
-Admin Panel:
-
-bash
-Copy code
-cd admin  
+```
+Start Admin Panel
+```bash
+cd admin
 npm run dev
+```
 
-DEMO - 
